@@ -1,0 +1,453 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+  --prymari-text-color: #757575;
+  --title-text-color: #212121;
+  --focus-color: #2196f3;
+  --main-bgc: #ffffff;
+  --black-color: #000000;
+  --footer-bgc: #2f303a;
+  --team-selection-bgc: #f5f4fa;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--prymari-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+}
+
+.tex-dec {
+  text-decoration: none;
+}
+
+.adress {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ================  Навигация по сайту ================ */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.web-logo {
+  color: var(--focus-color);
+  font-family: var(--logo-font);
+}
+
+.logo {
+  margin-right: 93px;
+
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--focus-color);
+}
+
+.site-nav .link.current {
+  color: var(--focus-color);
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.container .contact {
+  margin-left: auto;
+}
+
+.link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-mail {
+  margin-right: 50px;
+}
+
+.contact-link {
+  color: var(--prymari-text-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--focus-color);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--focus-color);
+}
+
+/* ================  Навигация по сайту END ================ */
+
+/* ================  Обложка ================ */
+
+.hero {
+  background: var(--footer-bgc);
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.hero-theme {
+  padding-right: 300px;
+  padding-left: 300px;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-bgc);
+}
+
+.button {
+  display: block;
+  min-width: 136px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin: auto;
+
+  font-family: var(--main-font);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--main-bgc);
+  background-color: var(--focus-color);
+}
+/* ================  Конец обложки ================ */
+
+/* ================  Описание работы ================ */
+
+.selection {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: -30px;
+  margin-left: -30px; */
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.featuers-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+  max-width: 270px;
+  height: auto;
+}
+
+.features-list .title {
+  margin-bottom: 10px;
+  max-width: 270px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-list .title-text {
+  max-width: 270px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ================ КОНЕЦ описание работы ================ */
+
+.work-img {
+  padding-bottom: 94px;
+}
+
+.work-list {
+  display: flex;
+  margin-right: -30px;
+  margin-top: -30px;
+}
+
+.work-item {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.second-title {
+  margin-bottom: 50px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+/* ================ Team Selection ================ */
+.team-section {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: var(--team-selection-bgc);
+}
+
+.team {
+  display: flex;
+  text-align: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.worker {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: var(--main-bgc);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.worker-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.worker-name {
+  margin-bottom: 10px;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.worker-specialty {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/* ================ КОНЕЦ Team Selection ================ */
+
+/* ================   Footer ================ */
+.footer {
+  background: var(--footer-bgc);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .container {
+  flex-direction: column;
+}
+
+.adress {
+  margin-top: 20px;
+}
+
+.logos {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-bgc);
+}
+.contact-list-item .map {
+  font-family: var(--main-font);
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-bgc);
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact-list-link {
+  font-family: var(--main-font);
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ================ КОНЕЦ Footer ================ */
+
+/* ================ Portfolio ================ */
+.portf-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn-nav:not(:last-child) {
+  margin-right: 8px;
+  display: block;
+}
+
+.modul-button {
+  padding: 6px 12px;
+  border-radius: 4px;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background: var(--team-selection-bgc);
+  border: none;
+}
+
+.modul-button:hover,
+.modul-button:focus {
+  cursor: pointer;
+  color: var(--main-bgc);
+  background-color: var(--focus-color);
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-nav {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-block {
+  display: block;
+}
+
+.portfolio-content {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-top: none;
+}
+
+.portfolio .portfolio-title {
+  margin-bottom: 4px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.portfolio .portfolio-text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--prymari-text-color);
+}
+/* ================  КОНЕЦ ОСНОВНОЙ СТРАНИЦЕ ================ */
+
+/* ================ КОНЕЦ Portfolio ================ */
