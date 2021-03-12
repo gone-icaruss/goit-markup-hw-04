@@ -133,11 +133,37 @@ img {
   padding-bottom: 32px;
 }
 
+.mail_img {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--prymari-text-color);
+}
+
+.contact-mail:hover .mail_img,
+.contact-mail:focus .mail_img {
+  fill: var(--focus-color);
+}
+
+.phone_img {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--prymari-text-color);
+}
+
+.contact-link:hover .phone_img,
+.contact-link:focus .phone_img {
+  fill: var(--focus-color);
+}
+
 .contact-mail {
   margin-right: 50px;
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   color: var(--prymari-text-color);
 }
 
@@ -160,6 +186,15 @@ img {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-theme {
@@ -209,6 +244,7 @@ img {
 
 .features-list {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   /* margin-top: -30px;
   margin-left: -30px; */
@@ -216,6 +252,22 @@ img {
 
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: var(--team-selection-bgc);
+  border-radius: 4px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .featuers-item {
@@ -273,6 +325,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
 /* ================ Team Selection ================ */
 .team-section {
   display: flex;
@@ -313,13 +366,119 @@ img {
 }
 
 .worker-specialty {
+  margin-bottom: 15px;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--focus-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--main-bgc);
+}
 /* ================ КОНЕЦ Team Selection ================ */
+/* ================ CLIENTS ================ */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--focus-color);
+  fill: var(--focus-color);
+}
+
+.clients-list-icon1 {
+  width: 44px;
+  height: 49px;
+}
+
+.clients-list-icon2 {
+  width: 40px;
+  height: 52px;
+}
+
+.clients-list-icon3 {
+  width: 41px;
+  height: 42px;
+}
+
+.clients-list-icon4 {
+  width: 80px;
+  height: 42px;
+}
+
+.clients-list-icon5 {
+  width: 59px;
+  height: 47px;
+}
+
+.clients-list-icon6 {
+  width: 88px;
+  height: 45px;
+}
+
+/* ================ КОНЕЦ CLIENTS ================ */
 
 /* ================   Footer ================ */
 .footer {
@@ -333,6 +492,8 @@ img {
 
 .adress {
   margin-top: 20px;
+  width: 231px;
+  height: 81px;
 }
 
 .logos {
@@ -361,6 +522,49 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* .invite {
+  width: 206px;
+  height: 80px;
+} */
+
+.invite-title {
+  /* margin-bottom: 20px; */
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-bgc);
+}
+
+.soc-list {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.soc-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--main-bgc);
+}
+
+.soc-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.soc-list-link:hover,
+.soc-list-link:focus {
+  background-color: var(--focus-color);
 }
 
 /* ================ КОНЕЦ Footer ================ */
@@ -416,6 +620,12 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio-nav:hover,
+.portfolio-nav:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-block {
