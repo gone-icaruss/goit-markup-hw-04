@@ -487,7 +487,12 @@ img {
   padding-bottom: 60px;
 }
 .footer .container {
-  flex-direction: column;
+  display: flex;
+  align-items: baseline;
+}
+
+.adres-container {
+  margin-right: 70px;
 }
 
 .adress {
@@ -504,6 +509,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-bgc);
 }
+
+.contact-list {
+  width: 231px;
+  height: 81px;
+}
+
 .contact-list-item .map {
   font-family: var(--main-font);
   font-weight: 400;
@@ -524,13 +535,15 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* .invite {
+.invite {
   width: 206px;
   height: 80px;
-} */
+}
 
 .invite-title {
-  /* margin-bottom: 20px; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
@@ -542,8 +555,7 @@ img {
 .soc-list {
   display: flex;
   align-items: center;
-  margin-right: 30px;
-  margin-left: 30px;
+  justify-content: space-between;
 }
 
 .soc-list-link {
