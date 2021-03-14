@@ -8,6 +8,7 @@
   --black-color: #000000;
   --footer-bgc: #2f303a;
   --team-selection-bgc: #f5f4fa;
+  --social-icon-color: #afb1b8;
 }
 
 body {
@@ -73,9 +74,9 @@ img {
 /* ================  Навигация по сайту ================ */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border: 1px solid #ececec;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -131,6 +132,7 @@ img {
 .link {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
 }
 
 .mail_img {
@@ -140,8 +142,8 @@ img {
   fill: var(--prymari-text-color);
 }
 
-.contact-mail:hover .mail_img,
-.contact-mail:focus .mail_img {
+.contact-link:hover .mail_img,
+.contact-link:focus .mail_img {
   fill: var(--focus-color);
 }
 
@@ -164,6 +166,8 @@ img {
 .contact-link {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--prymari-text-color);
 }
 
@@ -187,6 +191,7 @@ img {
   padding-bottom: 200px;
   padding-top: 200px;
   max-width: 1600px;
+  max-height: 600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -198,8 +203,8 @@ img {
 }
 
 .hero-theme {
-  padding-right: 300px;
-  padding-left: 300px;
+  width: 696px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -312,6 +317,8 @@ img {
 .work-item {
   margin-right: 30px;
   margin-top: 30px;
+  width: 370px;
+  height: 294px;
 }
 
 .second-title {
@@ -394,6 +401,7 @@ img {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  fill: var(--social-icon-color);
 }
 
 .social-list-link:hover,
