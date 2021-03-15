@@ -546,7 +546,6 @@ img {
 
 .invite {
   width: 206px;
-  height: 80px;
 }
 
 .invite-title {
@@ -656,6 +655,8 @@ img {
   display: block;
 }
 
+
+
 .portfolio-content {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
@@ -682,6 +683,5 @@ img {
   letter-spacing: 0.03em;
   color: var(--prymari-text-color);
 }
-/* ================  КОНЕЦ ОСНОВНОЙ СТРАНИЦЕ ================ */
 
 /* ================ КОНЕЦ Portfolio ================ */
